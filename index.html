@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant green Inertia | Pre-Trained Professionals for Your Business</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+        
+        :root {
+            --primary: #286834;
+            --secondary: #286834;
+            --accent: #3b82f6;
+            --light: #45895c;
+            --dark: #1e293b;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            overflow-x: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.351), rgba(0, 0, 0, 0.415)), url('https://blog.ipleaders.in/wp-content/uploads/2021/09/register-company-online-1.png') no-repeat center center/cover;
+            color: white;
+            padding: 1rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo img {
+            height: 94px; /* Adjust the height as needed */
+            width: auto;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #0b751b;
+        }
+        
+        .hero {
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: white;
+            color: var(--primary);
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-primary {
+            background-color: white;
+            color: var(--primary);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            margin-left: 1rem;
+        }
+        
+        .btn-outline:hover {
+            background-color: white;
+            color: var(--primary);
+        }
+        
+        .animated-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.1;
+        }
+        
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .shape:nth-child(1) {
+            width: 150px;
+            height: 150px;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+        
+        .shape:nth-child(2) {
+            width: 200px;
+            height: 200px;
+            bottom: 15%;
+            right: 10%;
+            animation-delay: 1s;
+        }
+        
+        .shape:nth-child(3) {
+            width: 100px;
+            height: 100px;
+            top: 60%;
+            left: 25%;
+            animation-delay: 2s;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(10deg);
+            }
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+        }
+        
+        section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+        
+        .section-title p {
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #dbeafe;
+            border-radius: 50%;
+            color: var(--primary);
+            font-size: 2rem;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        .process {
+            background-color: #f8fafc;
+        }
+        
+        .process-steps {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+            position: relative;
+        }
+        
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background-color: var(--accent);
+            z-index: 1;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            padding: 0 1rem;
+        }
+        
+        .step-number {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 50%;
+            color: var(--primary);
+            font-size: 1.8rem;
+            font-weight: 700;
+            border: 3px solid var(--accent);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .step h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        .industries {
+            text-align: center;
+        }
+        
+        .industry-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .industry-logo {
+            width: 120px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            filter: grayscale(0%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        
+        .industry-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        
+        .industry-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .testimonials {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .testimonials .section-title h2,
+        .testimonials .section-title p {
+            color: white;
+        }
+        
+        .testimonials .section-title p {
+            opacity: 0.8;
+        }
+        
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .testimonial {
+            padding: 2rem;
+        }
+        
+        .testimonial-content {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .testimonial-content::before,
+        .testimonial-content::after {
+            content: '"';
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.2);
+            position: absolute;
+        }
+        
+        .testimonial-content::before {
+            top: -20px;
+            left: -20px;
+        }
+        
+        .testimonial-content::after {
+            bottom: -40px;
+            right: -20px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 1rem;
+        }
+        
+        .author-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.2rem;
+        }
+        
+        .author-info p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+        
+        .cta {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 5rem 0;
+        }
+        
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta p {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #ffffff;
+            padding-left: 5px;
+        }
+        
+        /* .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #334155;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--accent);
+            transform: translateY(-3px);
+        } */
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #334155;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: #dbfee8;
+            transform: translateY(-3px);
+        }
+        
+        .social-links i {
+            font-size: 18px;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .process-steps {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .process-steps::before {
+                display: none;
+            }
+            
+            .step {
+                margin-bottom: 2rem;
+            }
+            
+            .btn-outline {
+                margin-left: 0;
+                margin-top: 1rem;
+                display: block;
+            }
+        }
+        
+        /* Animation classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Animation for feature cards */
+        .feature-card {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.5s ease;
+        }
+        
+        .feature-card.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Delay for feature cards */
+        .feature-card:nth-child(1) {
+            transition-delay: 0.1s;
+        }
+        
+        .feature-card:nth-child(2) {
+            transition-delay: 0.3s;
+        }
+        
+        .feature-card:nth-child(3) {
+            transition-delay: 0.5s;
+        }
+
+        .slider-wrapper {
+            width: 100%;
+            max-width: 1000px;
+            height: 500px;
+            overflow: hidden;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .slider {
+            display: flex;
+            width: calc(1000px * 10); /* 10 images */
+            animation: slide 50s linear infinite;
+        }
+
+        .slider img {
+            width: 1000px;
+            height: 500px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            10% { transform: translateX(0); }
+            20% { transform: translateX(-1000px); }
+            30% { transform: translateX(-2000px); }
+            40% { transform: translateX(-3000px); }
+            50% { transform: translateX(-4000px); }
+            60% { transform: translateX(-5000px); }
+            70% { transform: translateX(-6000px); }
+            80% { transform: translateX(-7000px); }
+            90% { transform: translateX(-8000px); }
+            100% { transform: translateX(-9000px); }
+        }
+
+        /* Talent Stats Section */
+        .talent-stats-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            text-align: center;
+        }
+
+        .talent-stats-section h2 {
+            font-size: 2.5rem;
+            color: #286834;
+            margin-bottom: 60px;
+            animation: pulseGrow 2s infinite;
+        }
+
+        .stats-grid {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            width: 280px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            opacity: 0;
+        }
+
+        .stat-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #286834;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 1.2rem;
+            color: #64748b;
+            margin-bottom: 15px;
+        }
+
+        .stat-underline {
+            height: 4px;
+            background: #8BC34A;
+            width: 80px;
+            margin: 0 auto;
+            animation: underlineGrow 1s forwards;
+            animation-delay: 1s;
+        }
+
+        /* Animation Classes */
+        @keyframes pulseGrow {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes flipIn {
+            from { 
+                transform: perspective(400px) rotateY(90deg);
+                opacity: 0;
+            }
+            to { 
+                transform: perspective(400px) rotateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from { 
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to { 
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotateIn {
+            from { 
+                transform: rotate(-30deg) scale(0.8);
+                opacity: 0;
+            }
+            to { 
+                transform: rotate(0) scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes underlineGrow {
+            from { width: 0; }
+            to { width: 80px; }
+        }
+
+        .pulse-grow {
+            animation: pulseGrow 2s infinite;
+        }
+
+        .flip-in {
+            animation: flipIn 1s forwards;
+            animation-delay: var(--delay, 0s);
+        }
+
+        .slide-up {
+            animation: slideUp 1s forwards;
+            animation-delay: var(--delay, 0s);
+        }
+
+        .rotate-in {
+            animation: rotateIn 1s forwards;
+            animation-delay: var(--delay, 0s);
+        }
+
+        .counter {
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .stats-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .stat-card {
+                width: 80%;
+            }
+        }
+         .career-callout {
+  background: #236a34e7;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 16px;
+  margin: 4rem 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.career-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.career-subtext {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.career-price {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.career-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.career-btn {
+  padding: 0.75rem 1.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.career-btn-primary {
+  background-color: white;
+  color: #236A34;
+}
+
+.career-btn-primary:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.career-btn-outline {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.career-btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="animated-bg">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <img src="images/PGI .jpeg.jpg" alt="Logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                     <li><a href="#Corporate MoUs">Corporate MoUs</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#industries">College</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <!-- <li><a href="https://wa.me/9345029705" class="btn btn-outline" target="_blank">Request Talent</a></li> -->
+                </ul>
+            </nav>
+            
+            <div class="hero">
+                <h1 class="fade-in">Pre-Trained Professionals Ready for Your Team</h1>
+                <p class="fade-in">We bridge the talent gap by providing corporations with skilled, job-ready professionals who can hit the ground running from day one.</p>
+                <div class="fade-in">
+                    <!-- <a href="#contact" class="btn btn-primary">Request Talent</a> -->
+                     <a href="https://wa.me/9345029705" class="btn btn-primary" target="_blank">Request Talent</a>
+                    <a href="#process" class="btn btn-outline">How It Works</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="services">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Why Choose Our PGI?</h2>
+                <p>Our professionals come pre-trained with the latest industry skills, reducing your onboarding time and training costs.</p>
+            </div>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Reduced Onboarding Time</h3>
+                    <p>Our candidates require minimal training as they come equipped with job-specific skills and knowledge.</p>
+                </div>
+
+                 <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Trained Candidates</h3>
+                    <p>Our candidates are pre-trained with practical, industry-relevant skills, ensuring they're job-ready from the start.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Cost-Effective Hiring</h3>
+                    <p>Save up to 40% on recruitment and training costs with our pre-vetted, skilled professionals.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Immediate Productivity</h3>
+                    <p>Our candidates deliver value from day one, with measurable impact within the first 90 days.</p>
+                </div>
+                 <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🧑‍🏫</div>
+                    <h3> We Train Your Team</h3>
+                    <p>We offer tailored training solutions to upskill your existing team members and align them with your business goals.</p>
+                </div>
+                
+            </div>
+             <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🔁 </div>
+                    <h3>Hassle-Free Replacements</h3>
+                    <p>Customized Training Programs Guaranteed Candidate Replacement if a candidate doesn’t fit, we provide a quick and reliable replacement at no extra cost, ensuring uninterrupted productivity.</p>
+                </div>
+        </div>
+    </section>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Program</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+        .InternJourneyHub {
+            display: flex;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #e6f0fa;
+            border-radius: 10px;
+        }
+        .ExperienceSection {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .ExpectationsHeader {
+            font-size: 2.5em;
+            color: #003087;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: slideIn 1s ease-out forwards;
+        }
+        .JourneyDetails {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-out 0.5s forwards;
+        }
+        .InternVisualZone {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1s forwards;
+        }
+        .InternVisualZone img {
+            max-width: 20%;
+            border-radius: 10px;
+        }
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+     <section id="Corporate MoUs"></section>
+    <div class="InternJourneyHub">
+        <div class="ExperienceSection">
+            <h1 class="ExpectationsHeader">Corporate MoUs</h1>
+            <p class="JourneyDetails">
+               <BR><H3>MoU with 'Guires Solutions.Chennai</H3></BR>
+We are delighted to announce that our organization has signed a Memorandum of Understanding (MOU) with the prestigious Ernad knowledge city. This collaboration marks a significant milestone for both institutions as we come together to strengthen our commitment towards academic excellence, research, and innovation.
+        </div>
+        <div class="InternVisualZone">
+            <!-- Placeholder for the image -->
+            <img src="images/F39B5C66-6C97-42D1-8183-E898805219E3.PNG" alt=" Interns">
+             
+            
+            <!-- <p style="color: #666;">[Image Placeholder: Interns collaborating]</p> -->
+        </div>
+    </div>
+</body>
+</html>
+
+<div style="text-align: center; margin: 70px 0;">
+  <img src="https://lh5.googleusercontent.com/gr2mGu29AG7SCJGQeaErV_GHJxtt9vTI7QBTENrhKTuFAP2XhfoJSgWwLkjES0Fj5eJxzqsgSPyg2lsirYsZW19Ktj_RFLg5r2WhE5dP4RJvG5sEEEzpbtb4OQ80lccZBg=w1280" 
+       alt="Interns" 
+       style="width: 100%; max-width: 600px; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+</div>
+    
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Our Simple 4-Step Process</h2>
+                <p>From initial consultation to talent deployment, we make it seamless for your business.</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step fade-in">
+                    <div class="step-number">1</div>
+                    <h3>Needs Assessment</h3>
+                    <p>We analyze your specific talent requirements and company culture.</p>
+                </div>
+                
+                <div class="step fade-in">
+                    <div class="step-number">2</div>
+                    <h3>Talent Matching</h3>
+                    <p>Our AI-powered system matches you with the best-fit candidates.</p>
+                </div>
+                
+                <div class="step fade-in">
+                    <div class="step-number">3</div>
+                    <h3>Skills Validation</h3>
+                    <p>Candidates undergo rigorous technical and soft skills assessments.</p>
+                </div>
+                
+                <div class="step fade-in">
+                    <div class="step-number">4</div>
+                    <h3>Seamless Onboarding</h3>
+                    <p>Your new team member starts adding value immediately.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deloitte Internship Program</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+        .InternJourneyHub {
+            display: flex;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #e6f0fa;
+            border-radius: 10px;
+        }
+        .ExperienceSection {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .ExpectationsHeader {
+            font-size: 2.5em;
+            color: #003087;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: slideIn 1s ease-out forwards;
+        }
+        .JourneyDetails {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-out 0.5s forwards;
+        }
+        .InternVisualZone {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1s forwards;
+        }
+        .InternVisualZone img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="InternJourneyHub">
+        <div class="ExperienceSection">
+            <h1 class="ExpectationsHeader">Naan Mudhalvan</h1>
+            <p class="JourneyDetails">
+               <H3>We’re part of the Naan Mudhalvan program</H3> working across Tamil Nadu to make a real difference! We’re teaming up with local communities, focusing on education and skill-building to empower the youth and help them shine. It’s all about creating opportunities and growing together, one step at a time
+        </div>
+        <div class="InternVisualZone">
+            <!-- Placeholder for the image -->
+            <img src="https://portal.naanmudhalvan.tn.gov.in/img/logo.d52ff4c5.png" alt=" Interns">
+            <!-- <p style="color: #666;">[Image Placeholder: Interns collaborating]</p> -->
+        </div>
+    </div>
+</body>
+</html>
+
+    <div class="slider-wrapper">
+        <div class="slider" id="slider">
+            <img src="images/img2.JPG" alt="Image 1">
+            <img src="images/img1.JPG" alt="Image 2">
+            <img src="images/img3.JPG" alt="Image 3">
+            <img src="images/img4.JPG" alt="Image 4">
+            <img src="images/img6.jpg" alt="Image 5">
+            <img src="images/img5.JPG" alt="Image 6">
+            <img src="images/img7.JPG" alt="Image 7">
+            <!-- <img src="https://images.unsplash.com/photo-1516321310768-79d0c4a82d92?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Image 8">
+            <img src="https://images.unsplash.com/photo-1497436072909-60f69c25b6e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Image 9">
+            <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Image 10"> -->
+        </div>
+    </div>
+
+    <div class="talent-stats-section">
+        <div class="container">
+            <h2 class="pulse-grow">Our Impact in Numbers</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card flip-in">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-number counter" data-target="100000">0</div>
+                    <div class="stat-label">Trained students</div>
+                    <div class="stat-underline"></div>
+                </div>
+                
+                <div class="stat-card slide-up" style="--delay: 0.2s">
+                    <div class="stat-icon">🤝</div>
+                    <div class="stat-number counter" data-target="25">0</div>
+                    <div class="stat-label">college Mou</div>
+                    <div class="stat-underline"></div>
+                </div>
+                
+                <div class="stat-card rotate-in" style="--delay: 0.4s">
+                    <div class="stat-icon">🎓</div>
+                    <div class="stat-number counter" data-target="50">0</div>
+                    <div class="stat-label">private projects</div>
+                    <div class="stat-underline"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="industries" class="industries">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Colleges we work with </h2>
+                <p>We provide trained professionals across multiple high-growth sectors.</p>
+            </div>
+            
+            <div class="industry-logos">
+                <div class="industry-logo fade-in">
+                    <img src="data:image/png;base64,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" alt="Microsoft" style="filter: none; opacity: 1;">
+                </div>
+                <div class="industry-logo fade-in">
+                    <img src="https://www.eduopinions.com/wp-content/uploads/2022/11/WOMENS-CHRISTIAN-COLLEGE.jpg" alt="Amazon" style="filter: none; opacity: 1;">
+                </div>
+                <div class="industry-logo fade-in">
+                    <img src="https://srmrmp.edu.in/wp-content/uploads/2022/01/logo1-1919x959.png" alt="HP" style="filter: none; opacity: 1;">
+                </div>
+                <div class="industry-logo fade-in">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrGJ0-0SqT7-ju9pgHN4a_KkiqubWnN5hJwQ&s" alt="Apple" style="filter: none; opacity: 1;">
+                </div>
+                <div class="industry-logo fade-in">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnBdQXmXnwdZotmnXBxwcoGAN3zT42sIhrBA&s" alt="IBM" style="filter: none; opacity: 1;">
+                </div>
+                <div class="industry-logo fade-in">
+                    <img src="https://www.facultyplus.com/wp-content/uploads/2021/09/Logo-01-new-35.png" alt="Tata" style="filter: none; opacity: 1;">
+                </div>
+                <div class="industry-logo fade-in">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeb3UwHY7UTk_toEsIvqnyBsjzFj-ytcC7Ag&s" alt="Tata" style="filter: none; opacity: 1;">
+                </div>
+                <div class="industry-logo fade-in">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrXFOZaUsNIPdVGgYAOIJLIveiy9wkcReBAA&s" alt="Tata" style="filter: none; opacity: 1;">
+                </div>
+                <div class="industry-logo fade-in">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFCJQAwPExiyyHlNYLG7wzGJacbTMoXpL-WA&s" alt="Tata" style="filter: none; opacity: 1;">
+                </div>
+                <div class="industry-logo fade-in">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOPlqzGhuzzK6RdRaJQJEFGvVpFPS3g2XNHQ&s" alt="Tata" style="filter: none; opacity: 1;">
+                </div>
+                  <div class="industry-logo fade-in">
+                    <img src="https://www.sokaikedacollege.in/assets/images/soka/soka_logo.png" alt="Tata" style="filter: none; opacity: 1;">
+                </div>
+                  <div class="industry-logo fade-in">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnZ-zFK8BlmJpyQ38Pfje3wq4rX01HgW8mwA&s" alt="Tata" style="filter: none; opacity: 1;">
+                </div>
+                <div class="industry-logo fade-in">
+                    <img src="https://i0.wp.com/ekc.edu.in/wp-content/uploads/2022/07/ekc-logo.png?fit=484%2C278&ssl=1" alt="Tata" style="filter: none; opacity: 1;">
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>What Our Clients Say</h2>
+                <p>Hear from companies that have transformed their workforce with our talent solutions.</p>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial fade-in">
+                    <div class="testimonial-content">
+                        <p>Plant green Inertia provided us with three full-stack developers who were productive from week one. The quality of their training was evident in how quickly they adapted to our codebase.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah </h4>
+                            <p>CTO, TechSolutions Inc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="cta">
+        <div class="container">
+            <h2 class="fade-in">Ready to Build Your Dream Team?</h2>
+            <p class="fade-in">Let us provide you with job-ready professionals tailored to your specific needs.</p>
+            <a href="#" class="btn btn-primary fade-in">Request Talent Now</a>
+        </div>
+
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Plant green Inertia</h3>
+                    <p>Bridging the talent gap with pre-trained, job-ready professionals for your business success.</p>
+                    <div class="social-]links">
+                     <a href="https://youtube.com/@plantgreeninertia?si=mOqK5KzUofD89npz" target="_blank"><i class="fab fa-youtube"></i></a>
+<a href="https://www.instagram.com/plantgreeninertia?igsh=cnB2dXNrcGdlbHNy" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.instagram.com/plantgreeninertia?igsh=cnB2dXNrcGdlbHNy" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Tech Talent</a></li>
+                        <li><a href="#">Finance Professionals</a></li>
+                        <li><a href="#">Healthcare Staff</a></li>
+                        <li><a href="#">Skilled Labor</a></li>
+                        <li><a href="#">Executive Search</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Process</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li>Plant Green Inertia</li>
+                        <li>Office No. 10, 2nd floor, City Centre Plaza, No. 7/3, Mount Road, Anna Salai, Triplicane, Chennai, Tamil Nadu 600002</li>
+                        <li>trainings.pgi@gmail.com plantgreeninertia@gmail.com</li>
+                        <li>+91 8220699083 +91 6369462903</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Plant green Inertia. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Animation on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const appearOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+        
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('active');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+        
+        fadeElements.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+        
+        // Animate feature cards sequentially
+        const featureCards = document.querySelectorAll('.feature-card');
+        
+        featureCards.forEach((card, index) => {
+            card.style.transitionDelay = `${index * 0.2}s`;
+            appearOnScroll.observe(card);
+        });
+
+        // Counter animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200;
+            
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / speed;
+                
+                if(count < target) {
+                    const updateCount = () => {
+                        const current = +counter.innerText;
+                        if(current < target) {
+                            counter.innerText = Math.ceil(current + increment);
+                            setTimeout(updateCount, 1);
+                        } else {
+                            counter.innerText = target + (target === 95 ? '%' : '+');
+                        }
+                    }
+                    updateCount();
+                }
+            });
+            
+            // Animate stats when they come into view
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            document.querySelectorAll('.stat-card').forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
